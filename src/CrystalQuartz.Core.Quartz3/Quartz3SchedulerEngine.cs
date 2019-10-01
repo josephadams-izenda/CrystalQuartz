@@ -52,5 +52,12 @@ namespace CrystalQuartz.Core.Quartz3
             ISchedulerFactory schedulerFactory = new StdSchedulerFactory(properties);
             return schedulerFactory.GetScheduler().Result;
         }
+
+        object ISchedulerEngine.CreateStdScheduler()
+        {
+            var schedulerFactory = new StdSchedulerFactory();
+            var scheduler = schedulerFactory.GetScheduler().Result;
+            return scheduler;
+        }
     }
 }

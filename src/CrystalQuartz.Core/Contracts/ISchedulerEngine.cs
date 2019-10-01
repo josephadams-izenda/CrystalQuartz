@@ -7,5 +7,6 @@
 
 
         SchedulerServices CreateServices(object scheduler, Options options);
+        object CreateStdScheduler();
     }
 }

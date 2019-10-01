@@ -79,6 +79,7 @@
     <Compile Include="Domain\ObjectInput\StandardInputTypeConverter.cs" />
     <Compile Include="Domain\TriggerDetailsData.cs" />
     <Compile Include="Domain\TriggerSecondaryData.cs" />
+    <Compile Include="SchedulerProviders\StdSchedulerProvider.cs" />
     <Compile Include="Services\AllowedJobTypesRegistry.cs" />
     <Compile Include="Services\EventsTransformer.cs" />
     <Compile Include="Domain\Events\SchedulerEvent.cs" />

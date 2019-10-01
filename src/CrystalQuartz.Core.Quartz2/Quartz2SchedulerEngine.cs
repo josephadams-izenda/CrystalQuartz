@@ -52,5 +52,12 @@ namespace CrystalQuartz.Core.Quartz2
             ISchedulerFactory schedulerFactory = new StdSchedulerFactory(properties);
             return schedulerFactory.GetScheduler();
         }
+
+        object ISchedulerEngine.CreateStdScheduler()
+        {
+            var schedulerFactory = new StdSchedulerFactory();
+            var scheduler = schedulerFactory.GetScheduler();
+            return scheduler;
+        }
     }
 }
